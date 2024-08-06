@@ -28,7 +28,7 @@ public class WebSecurityConfig {
     CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
         configuration.setAllowedOrigins(
-                Arrays.asList("http://localhost:3000"));
+                Arrays.asList("http://localhost:3000","https://frontkkhk.netlify.app"));
         configuration.setAllowedMethods(
                 Arrays.asList("GET","POST","PUT","PATCH","DELETE","OPTIONS"));
         configuration.setAllowedHeaders(Arrays.asList("*"));

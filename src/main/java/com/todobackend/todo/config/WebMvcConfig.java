@@ -14,7 +14,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
         // 모든 경로에 대해
         registry.addMapping("/**")
                 // Origin이 http://localhost:3000 추가 - 리액트 서버
-                .allowedOrigins("http://localhost:3000")
+                .allowedOrigins("http://localhost:3000","https://frontkkhk.netlify.app")
                 // 허용할 메서드 추가 (GET, POST, PUT, PATCH, DELETE, OPTIONS .... )
                 .allowedMethods("GET","POST","PUT","PATCH","DELETE","OPTIONS")
                 .allowedHeaders("*")
